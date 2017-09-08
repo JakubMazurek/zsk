@@ -89,39 +89,3 @@ blok.textContent = dane;
 var podajImie = prompt("Podaj imię");
 var blokImie = document.getElementById("imie");
 blokImie.textContent = "Imię: " + podajImie;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
