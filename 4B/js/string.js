@@ -24,6 +24,38 @@ console.log(male);
 var duzaMale = text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
 console.log(duzaMale);
 
+var podaj = prompt('Podaj wartość');
+podaj = podaj.charAt(0).toUpperCase() + podaj.slice(1).toLowerCase()
+console.log(podaj);
+var elNaglowek = document.getElementById('naglowek');
+elNaglowek.textContent = podaj;
+
+var pom = podaj.substr(1, podaj.length - 2);
+console.log(pom);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
