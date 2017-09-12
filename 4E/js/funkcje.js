@@ -32,10 +32,10 @@ var x = prompt('Podaj wartość', '0 - pole, 1 - objętość');
 var poleProstokata = poleObjetosc(a, b, c)[x];
 console.log(poleProstokata);
 
-zad. napisać skrypt, który oblicza obwód, pole koła oraz objętość stożka. Dane użytkownik podaje z klawiatury. Wykorzystaj obiekt Math.
+/*zad. napisać skrypt, który oblicza obwód, pole koła oraz objętość stożka. Dane użytkownik podaje z klawiatury. Wykorzystaj obiekt Math.
 Użytkownik wybiera za pomoc pola radio co chce obliczyć.
 Dane wprowadza w formularzu.
-Dane wyświetl w bloku strony.
+Dane wyświetl w bloku strony.*/
 
 
 
