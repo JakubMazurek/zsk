@@ -92,5 +92,5 @@ for(var i = 0; i <= 4; i++){
 }
 console.log(liczby);
 
-//110 linia kodu
+//110 linia kodu  kartkówka na następnej lekcji
 
