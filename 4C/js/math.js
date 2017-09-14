@@ -76,6 +76,12 @@ console.log(losuj); //0.6038861126085373
 var losuj1 = Math.floor(Math.random() * 11);
 console.log(losuj1);
 
+//losuj z przedziału <10;100>
+
+for(var i=0; i< 100; i++){
+    document.write(Math.floor(Math.random() * 91 + 10) + '<br>');
+}
+
 
 
 
