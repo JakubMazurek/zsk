@@ -14,16 +14,16 @@
 }*/
 
 
-/*for (var j = 1; j <= 10; j++){
+for (var j = 1; j <= 10; j++){
     if (j == 1){
         document.write(j + ' raz<br>');
     }else{
         document.write(j + ' razy<br>');
     }
-}*/
+}
 
 
-/*uzytkownik podaje z kalwiatury wartosc poczatkowa i koncowa petli, po kazdej liczbie dodaj przecinek a tylko po ostatniej liczbie dodaj kropkę. Pierwsza liczba musi byćmniejsza od drugiej.*/
+/*uzytkownik podaje z kalwiatury wartosc poczatkowa i koncowa petli, po kazdej liczbie dodaj przecinek a tylko po ostatniej liczbie dodaj kropkę. Pierwsza liczba musi być mniejsza od drugiej.*/
 
 
 /*var i = prompt('Podaj wartość początkową');
