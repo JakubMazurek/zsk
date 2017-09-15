@@ -51,8 +51,7 @@ while(i++ < 5){
     document.write(i + '<br>');
 }*/
 
-/*
-var wiek;
+/*var wiek;
 wiek = prompt('Podaj wiek');
 var wiek1 = 18;
 
@@ -65,8 +64,7 @@ while(wiek != wiek1){
 
 if (wiek  == 18){
     document.write('Masz 18 lat');
-}
-*/
+}*/
 
 //******************  pętla do while  *******************
 
@@ -80,17 +78,18 @@ while(wiek != 18)*/
 
 /*Podaj 5 liczb podzielnych przez 2 z klawiatury. Zapisz je do tablicy i wyświetl na stronie.*/
 
-var liczby = [];
+/*var liczby = [];
 var x;
 for(var i = 0; i <= 4; i++){
     do{
         x = prompt('Podaj x');
+        x = parseInt(x);
     }
     while(x % 2 != 0)
 
     liczby[i] = x;
 }
-console.log(liczby);
+console.log(liczby);*/
 
 //110 linia kodu  kartkówka na następnej lekcji
 
