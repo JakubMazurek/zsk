@@ -45,7 +45,7 @@ console.log(zaokraglenie);
 var zaokMin = (Math.round(minimalna));
 console.log(zaokMin);
 
-//abs, rounf, floor
+//abs, round, floor
 
 var x = -56;
 var y = - 13.1;
