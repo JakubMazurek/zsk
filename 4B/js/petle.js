@@ -25,7 +25,7 @@
 
 /*Użytkownik podaje z kalwiatury wartość  początkową i końcową pętli, po każdej liczbie dodaj przecinek a tylko po ostatniej liczbie dodaj kropkę. Pierwsza liczba musi byćmniejsza od drugiej.*/
 
-var i = prompt('Podaj wartość początkową');
+/*var i = prompt('Podaj wartość początkową');
 var j = prompt('Podaj wartość końcową');
 i = parseInt(i);
 j = parseInt(j);
@@ -41,8 +41,40 @@ if (i < j){
     }
 }else{
     alert('Błędne dane!');
+}*/
+
+//****************************  WHILE  ***********************
+
+/*var i=0;
+
+while(i++ < 5){
+    document.write(i + '<br>');
+}*/
+
+/*
+var x = 0, y = 0;
+
+while (x >= y){
+    x = Number(prompt('Podaj x'));
+    y = Number(prompt('Podaj y'));
 }
 
+document.write('Podałeś poprawne wartości: <br>' + 'x = ' + x + ', y = ' + y);
+*/
+
+
+//************************* DO WHILE  ***********************
+
+/*do {
+    var wiek = prompt('Podaj wiek');
+    if(wiek ==18){
+        document.write('Masz 18 lat');
+    }
+ }
+while(wiek != 18)*/
+
+
+/*wykorzystaj petle for i do while. Podaj 5 liczb podzilenych przez 2 z klawiatury. Zapsz je do tablicy i wyświetl w konsoli.*/
 
 
 
