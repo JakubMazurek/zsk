@@ -77,7 +77,7 @@ document.write('Podałeś poprawne wartości:<br>' + 'x = ' + x +'<br>' + 'y = '
 
 /*wykorzystaj petle for i do  while. Podaj 5 liczb podzielnych przez 2 z klawiatury. Zapisz je do tablicy i wyświetl w konsoli.*/
 
-var liczby = [];
+/*var liczby = [];
 var x;
 for(var i = 0; i <= 4; i++){
     do{
@@ -86,11 +86,134 @@ for(var i = 0; i <= 4; i++){
     }while(x % 2 != 0)
         liczby[i] = x;
 }
-console.log(liczby);
+console.log(liczby);*/
+
+
+/*użytkownik podaje z klawiatury liczbę, zabezpiecz przed podaniem litery, znaku specjalnego*/
+
+
+/*document.write('<input type="text" id="liczba">');
+document.write('<button id="przycisk">Wyślij</button>');
+var elPrzycisk = document.getElementById('przycisk');
+
+elPrzycisk.onclick = function (){
+    elLiczba = document.getElementById('liczba');
+    var wartosc = elLiczba.value;
+    if(!isNaN(wartosc)){
+        console.log(wartosc);
+    }
+}*/
+
+
+/*program wyświetlający liczby 1-10 w pięciu rzędach. Po każdej liczbie ma być przecinek a po ostatniej w każdym rzędzie ma być kropka.*/
+
+for(var i = 1; i <=5; i++){
+    for (var j = 1; j <= 10; j++){
+        if (j != 10){
+            document.write(j + ',');
+        }else{
+            document.write(j + '.');
+        }
+    }
+    document.write('<br>');
+}
+
+/*
+
+*
+**
+***
+****
+*****
+
+*/
+
+/*for(var i = 1; i <= 5; i++){
+    for(var j = 1; j <= i; j++){
+        document.write('*');
+    }
+    document.write('<br>');
+}*/
+
+
+/*
+
+1
+22
+333
+4444
+55555
+*/
+
+/*for(var i = 1; i <= 5; i++){
+    for(var j = 1; j <= i; j++){
+        document.write(i);
+    }
+    document.write('<br>');
+}*/
+
+    /*Podaj z klawiatury maksymalną ilośc gwiazdek,
+    zrób pętle w której zabezpieczysz przd podaniem błędnych danych*/
+
+/*do{
+    var liczba = prompt('Podaj max ilość gwiazdek');
+}while(isNaN(liczba) || liczba <=0)
+
+    for(var i = 1; i <= liczba; i++){
+        for(var j = 1; j <= i; j++){
+            document.write('*');
+        }
+        document.write('<br>');
+    }*/
 
 
 
+/*Użytkownik podaje login i haslo w formularzu. Jeśli login to admin a haslo to tajne@123 to na ekranie wyświetli się w kolorze czerwonym: "poprawne hasło"*/
 
+var  elLogin = document.getElementById('login');
+var elPass = document.getElementById('pass');
+var elPrzycisk = document.getElementById('przycisk');
+var elBlok = document.getElementById('blok');
+
+
+
+elPrzycisk.onclick = function (){
+    var login = elLogin.value;
+    var pass = elPass.value;
+    if (login == 'admin' && pass == 'tajne@123'){
+
+        /*elBlok.style.color = 'red';
+        elBlok.innerHTML = 'poprawne hasło';*/
+    }
+}
+
+
+//*********************    tablice   ****************************
+
+var tab = ['Anna', 'Jacek', 'Krzysztof', 'Paweł'];
+
+for(var i = 0; i <= tab.length - 1; i++){
+    document.write(tab[i] + ', ');
+}
+document.write('<br>');
+
+//foreach
+
+function pokaz(wartosc, indeks){
+    document.write(indeks + 1 + ' - element tablicy wynosi: ');
+    document.write('<strong>' + wartosc + '</strong>');
+    document.write('<br>');
+}
+
+tab.forEach(pokaz);
+
+
+
+function p(a,b){
+document.write(a + b + '<br>' );
+}
+
+tab.forEach(p);
 
 
 
