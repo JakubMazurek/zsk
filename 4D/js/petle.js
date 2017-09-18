@@ -219,6 +219,14 @@ document.write('<br>');
 
 //foreach
 
+function p(a,b){
+document.write(a + b + '<br>' );
+}
+
+tab.forEach(p);
+
+
+
 function pokaz(wartosc, indeks){
     document.write(indeks + 1 + ' - element tablicy wynosi: ');
     document.write('<strong>' + wartosc + '</strong>');
@@ -229,11 +237,7 @@ tab.forEach(pokaz);
 
 
 
-function p(a,b){
-document.write(a + b + '<br>' );
-}
 
-tab.forEach(p);
 
 
 
