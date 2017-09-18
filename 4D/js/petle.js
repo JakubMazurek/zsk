@@ -95,9 +95,9 @@ console.log(liczby);*/
 /*document.write('<input type="text" id="liczba">');
 document.write('<button id="przycisk">Wyślij</button>');
 var elPrzycisk = document.getElementById('przycisk');
+var elLiczba = document.getElementById('liczba');
 
 elPrzycisk.onclick = function (){
-    elLiczba = document.getElementById('liczba');
     var wartosc = elLiczba.value;
     if(!isNaN(wartosc)){
         console.log(wartosc);
@@ -107,7 +107,7 @@ elPrzycisk.onclick = function (){
 
 /*program wyświetlający liczby 1-10 w pięciu rzędach. Po każdej liczbie ma być przecinek a po ostatniej w każdym rzędzie ma być kropka.*/
 
-for(var i = 1; i <=5; i++){
+/*for(var i = 1; i <=5; i++){
     for (var j = 1; j <= 10; j++){
         if (j != 10){
             document.write(j + ',');
@@ -116,7 +116,7 @@ for(var i = 1; i <=5; i++){
         }
     }
     document.write('<br>');
-}
+}*/
 
 /*
 
@@ -152,8 +152,25 @@ for(var i = 1; i <=5; i++){
     document.write('<br>');
 }*/
 
+
+/*
+1
+12
+123
+1434
+12345
+*/
+
+/*for(var i = 1; i <= 5; i++){
+    for(var j = 1; j <= i; j++){
+        document.write(j);
+    }
+    document.write('<br>');
+}*/
+
+
     /*Podaj z klawiatury maksymalną ilośc gwiazdek,
-    zrób pętle w której zabezpieczysz przd podaniem błędnych danych*/
+    zrób pętle w której zabezpieczysz przed podaniem błędnych danych*/
 
 /*do{
     var liczba = prompt('Podaj max ilość gwiazdek');
@@ -177,15 +194,18 @@ var elBlok = document.getElementById('blok');
 
 
 
-elPrzycisk.onclick = function (){
+/*elPrzycisk.onclick = function (){
     var login = elLogin.value;
     var pass = elPass.value;
     if (login == 'admin' && pass == 'tajne@123'){
 
-        /*elBlok.style.color = 'red';
-        elBlok.innerHTML = 'poprawne hasło';*/
+        elBlok.style.color = 'red';
+        elBlok.innerHTML = 'Poprawne hasło';
+    }else{
+        elBlok.style.color = 'green';
+        elBlok.innerHTML = 'Błędne hasło';
     }
-}
+}*/
 
 
 //*********************    tablice   ****************************
