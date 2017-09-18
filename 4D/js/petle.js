@@ -212,7 +212,7 @@ var elBlok = document.getElementById('blok');
 
 var tab = ['Anna', 'Jacek', 'Krzysztof', 'Paweł'];
 
-for(var i = 0; i <= tab.length - 1; i++){
+for (var i = 0; i <= tab.length - 1; i++){
     document.write(tab[i] + ', ');
 }
 document.write('<br>');
