@@ -33,12 +33,13 @@ console.log(pierwiastek);
 
 var a = 13.2;
 var b = 28.5;
-var b = 30;
+var c = 30;
 
 var minimalna = Math.min(a,b);
 var maksymalna = Math.max(a,b,c);
 console.log('Minimalna: ' + minimalna);
 console.log('Maksymalna: ' + maksymalna);
+
 var zaokraglenie = Math.round(b);
 console.log(zaokraglenie);
 
@@ -74,7 +75,7 @@ console.log(p); //1024
 var losuj = Math.random();
 console.log(losuj);
 
-//losuj z przedziału (0;10>)
+//losuj z przedziału <0;10>
 
 console.log(Math.floor(Math.random() * 11));
 
