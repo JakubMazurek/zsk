@@ -65,8 +65,9 @@ document.write('Podałeś poprawne wartości: <br>' + 'x = ' + x + ', y = ' + y)
 
 //************************* DO WHILE  ***********************
 
-/*do {
-    var wiek = prompt('Podaj wiek');
+/*var wiek;
+do {
+    wiek = prompt('Podaj wiek');
     if(wiek ==18){
         document.write('Masz 18 lat');
     }
@@ -74,7 +75,7 @@ document.write('Podałeś poprawne wartości: <br>' + 'x = ' + x + ', y = ' + y)
 while(wiek != 18)*/
 
 
-/*wykorzystaj petle for i do while. Podaj 5 liczb podzielnych przez 2 z klawiatury. Zapsz je do tablicy i wyświetl w konsoli.*/
+/*wykorzystaj petle for i do while. Podaj 5 liczb podzielnych przez 2 z klawiatury. Zapsz je do tablicy i wyświetl w konsoli tablicę.*/
 
 /*var liczby = [];
 var x;
@@ -82,7 +83,7 @@ for (var i = 0; i <= 4; i++){
     do{
         x = prompt('Podaj x');
         x = parseInt(x);
-    }while(x % 2 != 0)
+    }while(x % 2 != 0)          //(x % 2) ==> jak będzie 0 to wyniesie false
         liczby[i] = x;
 }
 console.log(liczby);*/
@@ -191,7 +192,7 @@ elPrzycisk.onclick = function (){
 
 var tab = ['Anna', 'Jacek', 'Janusz', 'Adrian'];
 
-for (var i = 0; i <= tab.length - 1; i++){
+for (var i = 0; i < tab.length; i++){
     //document.write(tab[i] + ' ');
 }
 
