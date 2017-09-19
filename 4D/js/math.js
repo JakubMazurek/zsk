@@ -79,9 +79,19 @@ console.log(losuj);
 
 console.log(Math.floor(Math.random() * 11));
 
+//zaokrąglenie
 
+var liczba = 3.123456789;
+console.log(typeof(liczba));
+var nowa = liczba.toFixed(2); //3.12
+console.log(typeof(nowa));
+console.log(nowa);
+var liczba1 = 3.123456789;
+var nowa1 = liczba1.toPrecision(4); //3.123
+console.log(nowa1);
 
-
+var suma = nowa + nowa1;
+console.log(suma);
 
 
 

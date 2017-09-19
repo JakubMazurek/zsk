@@ -95,9 +95,9 @@ console.log(liczby);*/
 /*document.write('<input type="text" id="liczba">');
 document.write('<button id="przycisk">Wyślij</button>');
 var elPrzycisk = document.getElementById('przycisk');
-var elLiczba = document.getElementById('liczba');
 
 elPrzycisk.onclick = function (){
+    elLiczba = document.getElementById('liczba');
     var wartosc = elLiczba.value;
     if(!isNaN(wartosc)){
         console.log(wartosc);
@@ -152,25 +152,8 @@ elPrzycisk.onclick = function (){
     document.write('<br>');
 }*/
 
-
-/*
-1
-12
-123
-1434
-12345
-*/
-
-/*for(var i = 1; i <= 5; i++){
-    for(var j = 1; j <= i; j++){
-        document.write(j);
-    }
-    document.write('<br>');
-}*/
-
-
     /*Podaj z klawiatury maksymalną ilośc gwiazdek,
-    zrób pętle w której zabezpieczysz przed podaniem błędnych danych*/
+    zrób pętle w której zabezpieczysz przd podaniem błędnych danych*/
 
 /*do{
     var liczba = prompt('Podaj max ilość gwiazdek');
@@ -194,38 +177,27 @@ var elBlok = document.getElementById('blok');
 
 
 
-/*elPrzycisk.onclick = function (){
+elPrzycisk.onclick = function (){
     var login = elLogin.value;
     var pass = elPass.value;
     if (login == 'admin' && pass == 'tajne@123'){
 
-        elBlok.style.color = 'red';
-        elBlok.innerHTML = 'Poprawne hasło';
-    }else{
-        elBlok.style.color = 'green';
-        elBlok.innerHTML = 'Błędne hasło';
+        /*elBlok.style.color = 'red';
+        elBlok.innerHTML = 'poprawne hasło';*/
     }
-}*/
+}
 
 
 //*********************    tablice   ****************************
 
 var tab = ['Anna', 'Jacek', 'Krzysztof', 'Paweł'];
 
-for (var i = 0; i <= tab.length - 1; i++){
+for(var i = 0; i <= tab.length - 1; i++){
     document.write(tab[i] + ', ');
 }
 document.write('<br>');
 
 //foreach
-
-function p(a,b){
-document.write(a + b + '<br>' );
-}
-
-tab.forEach(p);
-
-
 
 function pokaz(wartosc, indeks){
     document.write(indeks + 1 + ' - element tablicy wynosi: ');
@@ -237,7 +209,11 @@ tab.forEach(pokaz);
 
 
 
+function p(a,b){
+document.write(a + b + '<br>' );
+}
 
+tab.forEach(p);
 
 
 
