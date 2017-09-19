@@ -206,7 +206,7 @@ function pokaz(wartosc, indeks){
 }
 
 tab.forEach(pokaz);
-<<<<<<< HEAD
+
 
 
 
