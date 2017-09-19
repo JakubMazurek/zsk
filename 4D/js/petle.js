@@ -206,6 +206,7 @@ function pokaz(wartosc, indeks){
 }
 
 tab.forEach(pokaz);
+<<<<<<< HEAD
 
 
 
@@ -219,3 +220,5 @@ tab.forEach(p);
 
 
 
+=======
+>>>>>>> origin/master
