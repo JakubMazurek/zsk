@@ -1,0 +1,39 @@
+*{
+    font-size: 20px;
+}
+
+.czerwony{
+    background-color: #d4062f;
+    color: aliceblue;
+    width: 25%;
+    border: solid;
+    border-style: ridge;
+    border-color: #d9a0ab;
+    text-align: center;
+}
+
+.niebieski{
+    background-color: #32a7bc;
+    width: 25%;
+    border: solid;
+    border-style: ridge;
+    border-color: #62c2d3;
+    text-align: center;
+}
+
+.grey{
+    background-color: #8f9a9b;
+    width: 25%;
+    border: solid;
+    border-style: ridge;
+    border-color: #bcc5c7;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+#przycisk{
+    margin-left: 85px;
+}
