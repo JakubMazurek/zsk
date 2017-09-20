@@ -153,7 +153,7 @@ elPrzycisk.onclick = function (){
 }*/
 
     /*Podaj z klawiatury maksymalną ilośc gwiazdek,
-    zrób pętle w której zabezpieczysz przd podaniem błędnych danych*/
+    zrób pętle w której zabezpieczysz przed podaniem błędnych danych*/
 
 /*do{
     var liczba = prompt('Podaj max ilość gwiazdek');
