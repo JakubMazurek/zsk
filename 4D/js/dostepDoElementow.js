@@ -12,7 +12,7 @@ if(elNaglowek.length > 0){
     elNaglowek[0].className = 'czerwony';
 }
 
-//Metoda getElementvar ByClassName()
+//Metoda getElementsByClassName()
 
 var elCzerwony = document.getElementsByClassName('czerwony');
 if (elCzerwony.length > 0){
