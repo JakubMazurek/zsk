@@ -147,7 +147,7 @@ Użytkownik może również w formularzu podaćinny znak jaki chce wyświetlic n
 /*Użytkownik podaje z klawiatury login i hasło. Jeśli login to Janusz a hasło to okoń na ekranie wyświetli się w kolorze czerwonym hasło
 Jesli hasło bedzie błędne to w kolorze niebieskim wyświetli się "Błędne hasło"*/
 
-var elLogin = document.getElementById('login');
+/*var elLogin = document.getElementById('login');
 var elPass = document.getElementById('pass');
 var elPrzycisk = document.getElementById('przycisk');
 var elWynik = document.getElementById('wynik');
@@ -163,7 +163,28 @@ elPrzycisk.onclick = function (){
         elWynik.innerHTML = 'Błędne hasło';
     }
 
+}*/
+
+//*******************  forEach   ****************
+
+var tab = ['Anna', 'Adrian', 'Janusz', 'Andrzej'];
+
+/*
+for (var i = 0; i <= tab.length - 1; i++){
+    document.write(tab[i] + ', ');
+}*/
+
+function p(wartosc, indeks){
+    document.write(indeks + 1 + ' element tablicy: ' + wartosc + '<br>');
 }
+
+tab.forEach(p);
+
+
+
+
+
+
 
 
 
