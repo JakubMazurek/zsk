@@ -1,0 +1,25 @@
+*{
+    font-size: 20px;
+}
+
+.czerwony{
+    background-color: #d4062f;
+    color: aliceblue;
+    width: 25%;border: solid;
+    border-style: ridge;
+    border-color: #e88599;
+    text-align: center;
+}
+
+.niebieski{
+    background-color: #098cc6;
+    color: aliceblue;
+    width: 25%;border: solid;
+    border-style: ridge;
+    border-color: #7aafc6;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
