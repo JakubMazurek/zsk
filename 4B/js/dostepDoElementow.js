@@ -49,15 +49,29 @@ var naglowek2 = document.querySelectorAll('h2');
 console.log(naglowek2);
 naglowek2[1].className = 'czerwony';
 
-var przycisk = document.getElementById('przycisk');
+var elPrzycisk = document.getElementById('przycisk');
 
-przycisk.onclick = function(){
+elPrzycisk.onclick = function () {
+    elKs = document.getElementsByName('sport');
+    if (elKs.length > 0){
+        for (var i=0; i<elKs.length; i++){
+            elKs[i].className = 'zielony';
+        }
+    }
+}
+
+
+/*przycisk.onclick = function(){
 
 }
 
 
-}
-//dokończyć
+}*/
+
+
+
+
+
 
 
 
