@@ -45,7 +45,7 @@ elTvAll[2].className = 'niebieski';
 
 //przycisk zmieni klasę w liście z telewizorami na niebieską
 
-/*var elPrzycisk = document.getElementById('przycisk');
+var elPrzycisk = document.getElementById('przycisk');
 var tv = document.getElementsByName('tv');
 
 elPrzycisk.onclick = function (){
@@ -53,7 +53,7 @@ elPrzycisk.onclick = function (){
     for (var i = 0; i < tv.length; i++){
         tv[i].className = 'niebieski';
     }
-}*/
+}
 
 //Wykonaj za pomocą forEach
 
