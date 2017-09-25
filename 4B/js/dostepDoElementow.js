@@ -51,14 +51,6 @@ naglowek2[1].className = 'czerwony';
 
 var elPrzycisk = document.getElementById('przycisk');
 
-elPrzycisk.onclick = function () {
-    elKs = document.getElementsByName('sport');
-    if (elKs.length > 0){
-        for (var i=0; i<elKs.length; i++){
-            elKs[i].className = 'zielony';
-        }
-    }
-}
 
 
 /*przycisk.onclick = function(){
