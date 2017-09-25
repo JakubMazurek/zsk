@@ -34,6 +34,7 @@ if (elCzerwony.length > 0){
 //zwraca pierwsze dopasowanie
 
 var elTv = document.querySelector('li.grey');
+var elTv = document.querySelector('li#tv1');
 elTv.className = 'czerwony';
 
 //Metoda querySelectorAll()
