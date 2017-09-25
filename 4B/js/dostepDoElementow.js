@@ -76,15 +76,52 @@ elPrzycisk.onclick = function (){
 }
 
 
+//previousElementSibling, nextElementSibling
+
+var poczatekElement = document.getElementById('s2');
+var poprzedniElement = poczatekElement.previousElementSibling;
+var nastepnyElement = poczatekElement.nextElementSibling;
+
+poczatekElement.className = 'niebieski';
+poprzedniElement.className = 'niebieski';
+nastepnyElement.className = 'niebieski';
+
+
+//fistChild, lastChild
+
+var lista = document.getElementsByTagName('ul')[1];
+//console.log(lista);
+
+var pierwszy = lista.firstElementChild;
+var ostatni = lista.lastElementChild;
+
+pierwszy.setAttribute('class', 'czerwony');
+ostatni.setAttribute('class', 'czerwony');
+
+//*****************************************************
+
+
+//Zmień pierwszy element input na button i przypisz wartość 'Wyślij'
+
+var text = document.getElementsByTagName('input')[0];
+console.log(text);
+text.setAttribute('type', 'button');
+//text.value = 'Wyślij';
+text.setAttribute('value', 'Wyślij');
+
+
+//tekst www łączy ze stroną szkoły ZSK
+
+var link = document.getElementById('link');
+link.setAttribute('href', 'http://zsk.poznan.pl');
 
 
 
-/*przycisk.onclick = function(){
-
-}
 
 
-}*/
+
+
+
 
 
 /*zad. dom.
