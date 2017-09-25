@@ -63,7 +63,7 @@ elPrzycisk.onclick = function (){
 
 /*Zmień wszystkie kolory w liście telewizory na zielone. Wykorzystaj metodę forEach()*/
 
-var elPrzycisk = document.getElementById('przycisk');
+/*var elPrzycisk = document.getElementById('przycisk');
 
 elPrzycisk.onclick = function (){
 elTv = document.getElementsByName('tv');
@@ -73,13 +73,55 @@ function zmien(element, index) {
     elTv[index].className = 'zielony';
 }
     elTv.forEach(zmien);
-}
+}*/
+
+//previousElementSibling, nextElementSibling
+
+var poczatekElem = document.getElementById('s2');
+var poprzedniElem = poczatekElem.previousElementSibling;
+var nastepnyElem = poczatekElem.nextElementSibling;
+
+console.log(poprzedniElem);
+
+poczatekElem.className = 'zielony';
+poprzedniElem.className = 'zielony';
+nastepnyElem.className = 'zielony';
+
+//firstChid, lastChild
+
+var lista = document.getElementsByTagName('ul')[2];
+//var lech = document.getElementById('s1');
+//console.log(lista);
+
+var pierwszy = lista.firstElementChild;
+var ostatni = lista.lastElementChild;
+pierwszy.setAttribute('class', 'czerwony');
+ostatni.setAttribute('class', 'czerwony');
+
+//**************************************************************
+
+
+//zmień pierwszy input type="text" na button i przypisz wartość 'Wyślij'
+
+var text = document.getElementsByTagName('input')[0];
+console.log(text);
+text.value = 'Wyślij';
+text.setAttribute('type','button');
+
+//połącz ze stroną szkoły ZSK
+
+var link = document.getElementById('link');
+link.setAttribute('href', 'http://zsk.poznan.pl');
 
 
 
 
+/*zad. dom. FizzBuzz
+Zadanie brzmi: Napisz program, który wyświetla liczby od 1 do 100. Dla liczb podzielnych przez 3 niech program wyświetli „Fizz”; dla liczb podzielnych przez 5 niech wyświetli ‚Buzz’; a dla liczb podzielnych przez 15 niech wyświetli ‚FizzBuzz’.*/
 
-
+/*
+https://blog.soltysiak.it/pl/2016/08/10-najpopularniejszych-algorytmicznych-pytan-rekrutacyjnych/
+*/
 
 
 
