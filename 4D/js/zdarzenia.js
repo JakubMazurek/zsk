@@ -36,6 +36,7 @@ blok.style.color = 'red';
     }
 }*/
 
+
 function sprawdz(){
     var element = document.getElementById(this.id);
     //console.log(element);
