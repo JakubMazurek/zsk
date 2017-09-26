@@ -116,12 +116,7 @@ link.setAttribute('href', 'http://zsk.poznan.pl');
 
 
 
-/*zad. dom. FizzBuzz
-Zadanie brzmi: Napisz program, który wyświetla liczby od 1 do 100. Dla liczb podzielnych przez 3 niech program wyświetli „Fizz”; dla liczb podzielnych przez 5 niech wyświetli ‚Buzz’; a dla liczb podzielnych przez 15 niech wyświetli ‚FizzBuzz’.*/
 
-/*
-https://blog.soltysiak.it/pl/2016/08/10-najpopularniejszych-algorytmicznych-pytan-rekrutacyjnych/
-*/
 
 
 

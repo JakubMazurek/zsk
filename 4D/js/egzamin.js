@@ -83,3 +83,21 @@ b.onclick = function (){
     window.location.assign("https://www.w3schools.com");
 }
 
+
+
+//*************************************************************
+/****************************  Zadanie rekrutacyjne  **********
+
+/*zad. dom. FizzBuzz
+Zadanie brzmi: Napisz program, który wyświetla liczby od 1 do 100. Dla liczb podzielnych przez 3 niech program wyświetli „Fizz”; dla liczb podzielnych przez 5 niech wyświetli ‚Buzz’; a dla liczb podzielnych przez 15 niech wyświetli ‚FizzBuzz’.*/
+
+/*
+https://blog.soltysiak.it/pl/2016/08/10-najpopularniejszych-algorytmicznych-pytan-rekrutacyjnych/
+*/
+
+/*An example of a Fizz-Buzz question is the following:
+Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+Most good programmers should be able to write out on paper a program which does this in a under a couple of minutes. Want to know something scary? The majority of comp sci graduates can't. I've also seen self-proclaimed senior programmers take more than 10-15 minutes to write a solution.*/
+
+
+
