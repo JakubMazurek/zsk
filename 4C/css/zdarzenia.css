@@ -1,0 +1,11 @@
+fieldset{
+    display: inline-block;
+}
+
+#komunikat{
+    color: red;
+}
+
+.kolor{
+    color: red;
+}

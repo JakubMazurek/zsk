@@ -51,6 +51,48 @@ elImiona[0].className = 'zielony';
 /*zad. dom.
 Zmień wszystkie elementy wciskając przycisk, zmieni klasę w liście z imionami na czerwone. Wykorzystaj metode forEach*/
 
+//previousElementSibling, nextElementSibling
+
+var poczatekElem = document.getElementById('ks2');
+var poprzedniElem = poczatekElem.previousElementSibling;
+var nastepnyElem = poczatekElem.nextElementSibling;
+
+poczatekElem.className = 'zielony';
+poprzedniElem.className = 'zielony';
+nastepnyElem.className = 'zielony';
+
+//firstChild, lastChild
+
+var lista = document.getElementsByTagName('ul')[2];
+
+console.log(lista);
+
+var pierwszy = lista.firstElementChild;
+var ostatni = lista.lastElementChild;
+
+/*pierwszy.className = 'czerwony';
+ostatni.className = 'czerwony';*/
+
+pierwszy.setAttribute('class', 'czerwony');
+ostatni.setAttribute('class', 'czerwony');
+
+//********************************************************
+
+/*Zmień pierwszy element input na button i przypisz wartość 'Wyślij'*/
+
+var input = document.getElementsByTagName('input')[0];
+console.log(input);
+input.setAttribute('type', 'button');
+//input.value = 'Wyślij';
+input.setAttribute('value', 'Wyślij');
+
+//tekst www łączy ze stronę szkoły ZSK
+var link = document.getElementById('link');
+link.setAttribute('href', 'http://zsk.poznan.pl');
+
+
+
+
 
 
 
