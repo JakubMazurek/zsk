@@ -75,7 +75,7 @@ kodPocztowy.addEventListener('input', sprawdz);
 
 //******************************************************
 
-// exec()
+// match()
 
 var text = 'Zespół Szkół Zespół Komunikacji';
 var regEx = /Zespół/i;
