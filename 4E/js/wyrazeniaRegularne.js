@@ -47,9 +47,9 @@ console.log(sprawdz);
 //^[0-9]{2}-[0-9]{3}$
 //^\d{2}-\d{3}$
 
-zad.dom
+/*zad.dom
 W formularzu użytkownik podaje z klawiatury kod pocztowy i miasto. Sprawdź czy kod jest prawidłowy. Jeśli tak to na ekranie w bloku wyświetl
-: Kod pocztowy: ........, miasto: .............
+: Kod pocztowy: ........, miasto: .............*/
 
 
 
