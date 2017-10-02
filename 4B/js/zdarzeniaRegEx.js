@@ -19,7 +19,7 @@ var regNazwisko = /^[A-z]{2,25}(\-[A-z]{2,25})?$/;
 var regLogin = /^(\w|\W){4,25}$/;
 var regMail = /^[A-z](\w|\.|\-){0,30}@(\w{1,20}\.){1,3}[A-z]{1,3}$/;
 //Hasło: duże/małe litery, cyfry, znak specjalny, minimum 8 znaków
-var regPass = /((?=.*\d)(?=.*[A-z])(?=.*[\W|_]).{8,20})/;
+var regPass = /^((?=.*\d)(?=.*[A-z])(?=.*[\W|_]).{8,20})$/;
 
 
 function sprawdzImie (){
