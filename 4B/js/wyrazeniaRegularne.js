@@ -37,14 +37,21 @@
 //var regEx = /\s/;
 //var regEx = /\S/;
 //var regEx = /(text)/;
-var regEx = /(text){2}/;
+//var regEx = /(text){2}/;
+var regEx = /\w+\.mp3/g;
+
+var pliki = 'plik.mp3 arkusz.csv szkola.mp3 zsk.mp3';
+//var sprawdz1 = regEx.test(pliki);
+var sprawdz1 = pliki.match(regEx);
+
+
 
 var text = 'text';
 //var text = '\\';
 
 var sprawdz = regEx.test(text);
 
-console.log(sprawdz);
+console.log(sprawdz1);
 
 //*****************************************
 
