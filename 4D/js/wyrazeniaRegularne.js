@@ -20,9 +20,15 @@ var text1 = 'Technik informatyk';
 //var regex1 = /[a-z]+/g;     //true
 //var regex1 = /[a-z]+/gi;     //true
 //var regex1 = /[a-z]+/gi;     //true
-var regex1 = /([a-z]+)/gi;     //true
+//var regex1 = /([a-z]+)/gi;     //true
 
-var sprawdz1 = regex1.test(text1);
+//****************************************************
+
+var regex1 = /\w+\.mp3/gi;
+var text1 = 'plik@mp3 arkusz.csv szkola.mp3 tekst.mp3';
+
+
+var sprawdz1 = text1.match(regex1);
 console.log(sprawdz1);
 
 //kod pocztowy
@@ -47,9 +53,3 @@ function sprawdzKod (){
 var przycisk = document.getElementById('przycisk');
 
 przycisk.addEventListener('click', sprawdzKod);
-
-
-
-
-
-
