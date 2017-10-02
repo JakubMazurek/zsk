@@ -183,4 +183,8 @@ popraw.addEventListener('click', odblokuj);
 przycisk.addEventListener('click', wyslij1);
 
 
+/*Zad.dom.
+
+Użytkownik podaje z klawiatury nazwy zdjęć z rozszerzeniami.
+nazwy nie moga miec cyfr, mogą buź pisane tylko małymi lietrami oraz nie mogą mieć znaków specjalnych, może być kropka. Wszystkie zdjęcia z rozszerzeniem *.jpg zapisz w tablicy o nazwie jpg a zdjęcia z bmp w tablicy bmp. Posortuj tablice roznąco i wyswietl na ekranie zawartość.*/
 
