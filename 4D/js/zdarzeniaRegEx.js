@@ -12,13 +12,14 @@ var przycisk = document.getElementById('przycisk');
 var blok = document.getElementById('blok');
 blok.style.color = 'red';
 
-var regImie = /^[A-z]{2,10}$/;
-var regNazwisko = /^([A-z]+\-|[A-z]){2,20}$/;
-var regLogin = /^(\w|\W){6,25}$/;
-var regMail = /^([A-z]{1,1})+([A-z0-9_.-]{5,30})+@([a-z0-9]{2,10})+\.+[a-z]{0,3}\.*[a-z]{0,3}$/;
-var regPassSpec = /[\W_]/;  //znaki specjalne
-var regPassLitery = /[A-z]/; //duże małe litery
-var regPassCyfry = /[0-9]/; //cyfry
+var regImie = /^[a-z]{2,10}$/i;
+var regNazwisko = /^[a-ząśćęńół]{2,20}(\-[a-ząśćęńół]{2,20})?$/i;
+
+/*wp.pl   Możesz użyć liter i cyfr oraz kropki, myślnika i znaku podkreślenia jako separatora.*/
+var regLogin = /^[a-z0-9]{1}[\w\.\-]{1,30}[a-z0-9]{1}$/i;
+var regMail = /^[a-z]{1}[\w|\.|\-]{0,30}@(\w{1,20}\.){1,3}[a-z]{1,3}$/i;
+var regPass = /^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W\_]).{8,35})$/;
+
 
 function sprawdzImie(){
     var imieSprawdz = regImie.test(imie.value);
@@ -53,7 +54,7 @@ function sprawdzLogin(){
 
 function mail() {
     var mailSprawdz = regMail.test(mail2.value);
-    if (!mailSprawdz || (mail1.value != mail2.value)){
+    if (mail1.value != mail2.value){
         blok.textContent = 'Adresy poczty wpisałeś błędnie!';
         mail1.value = '';
         mail2.value = '';
@@ -98,7 +99,8 @@ function pass (){
 
 
 function blokujPass (){
-    if (pass1.value.length >= 6){
+    var sprawdz = regPass.test(pass1.value);
+    if (sprawdz){
     blok.textContent = '';
 
     pass2.disabled = false;
@@ -133,10 +135,31 @@ function odblokuj (){
     }
 }
 
+
+
+
 function wyslij (){
+    var imiePoprawne = imie.value;
+    var nazwiskoPoprawne = nazwisko.value;
+
+    imiePoprawne = imiePoprawne.charAt(0).toUpperCase() + imiePoprawne.slice(1).toLowerCase();
+
+
+    nazwiskoPoprawne = nazwiskoPoprawne.charAt(0).toUpperCase() + nazwiskoPoprawne.slice(1).toLowerCase();
+
+    var regMyslnik = /[-]/;
+    var sprawdz = regMyslnik.test(nazwisko.value);
+    if (sprawdz){
+        var myslnik = nazwiskoPoprawne.indexOf('-');
+
+    }
+
+  /* zad.dom. dokończyć nazwisko jeśli ma myślnik
+   Dane moga być wysłane jeśli wszystkie pola są wypełnione, zaznaczony jest regulamin oraz wybrana jest data mniejsza niż teraźniejsza*/
+
     document.write('<div>');
-    document.write('Imię: ' + imie.value);
-    document.write('<br>Nazwisko: ' + nazwisko.value);
+    document.write('Imię: ' + imiePoprawne);
+    document.write('<br>Nazwisko: ' + nazwiskoPoprawne);
     document.write('<br>Login: ' + login.value);
     document.write('<br>Mail: ' + mail1.value);
     document.write('<br>Data urodzenia: ' + data.value);
@@ -144,12 +167,12 @@ function wyslij (){
 }
 
 
-//imie.addEventListener('blur', sprawdzImie);
-//nazwisko.addEventListener('blur', sprawdzNazwisko);
-//login.addEventListener('blur', sprawdzLogin);
-//mail1.addEventListener('blur', blokuj);
+imie.addEventListener('blur', sprawdzImie);
+nazwisko.addEventListener('blur', sprawdzNazwisko);
+login.addEventListener('blur', sprawdzLogin);
+mail1.addEventListener('blur', blokuj);
 pass1.addEventListener('blur', blokujPass);
-//mail2.addEventListener('blur', mail);
+mail2.addEventListener('blur', mail);
 pass2.addEventListener('blur', pass);
 //regulamin.addEventListener('click', sprawdz);
 regulamin.addEventListener('change', regulaminTest);
