@@ -51,6 +51,13 @@ console.log(sprawdz);
 W formularzu użytkownik podaje z klawiatury kod pocztowy i miasto. Sprawdź czy kod jest prawidłowy. Jeśli tak to na ekranie w bloku wyświetl
 : Kod pocztowy: ........, miasto: .............*/
 
+//var regEx = /\w{1,}\.mp3/g;
+var regEx = /\w+\.mp3/g;
+var text1 = 'plik@mp3 arkusz.csv szkola.mp3 tekst.mp3';
+//var sprawdz1 = regEx.test(text1);
+var sprawdz1 = text1.match(regEx);
+console.log(sprawdz1);
+document.write(sprawdz1);
 
 
 
