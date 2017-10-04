@@ -16,7 +16,9 @@ elKomunikat.style.color = 'red';
 var regImie = /^[a-ząęćźżńłó]{2,16}$/i;
 var regNazwisko = /^[a-ząężźćńół]{2,20}(\-[a-ząężźćńół]{2,20})?$/i;
 var regLogin = /^[a-z0-9]{1}[\w\.\-]{1,25}[a-z0-9]{1}$/i;
-var regMail = /^$/;
+var regMail = /^[a-z]{1}[\w|\.|\-]{0,30}@(\w{1,20}\.){1,3}[a-z]{1,3}$/i;
+//bezpieczne hasło: małe i duże litery, cyfry, znak specjalny
+var regPass = /^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W\_]).{8,35})$/;
 
 function sprawdzImie() {
     var sprawdz = regImie.test(elImie.value);
@@ -78,16 +80,33 @@ function pass (){
 
 
 function blokuj (){
+    sprawdz = regMail.test(elMail1.value);
+    if(sprawdz){
     elMail2.disabled = false;
     elMail2.focus();
     this.disabled = true;
+    elKomunikat.textContent = '';
+    }else{
+       elKomunikat.textContent = 'Mail nie spełnia wymagań';
+       elMail1.focus();
+
+    }
+
+
 
 }
 
 function blokujPass (){
-    elPass2.disabled = false;
-    elPass2.focus();
-    this.disabled = true;
+    var sprawdz = regPass.test(elPass1.value);
+    if(sprawdz){
+        elPass2.disabled = false;
+        elPass2.focus();
+        this.disabled = true;
+    }else{
+        elKomunikat.textContent = 'Hasło nie spełnia wymagań';
+       elPass1.focus();
+    }
+
 
 }
 
@@ -147,5 +166,6 @@ elPopraw.addEventListener('click', odblokuj1);
 elPrzycisk.addEventListener('click', wyslij);
 
 
-
+/*zad.dom.
+Przy haśle wyświetl czy hasło jest: słabe, dobre, silne. Informacja zwrotna ma być obrazkiem. Kolor zielony silne hasło, pomarańczowy dobre hasło, czerwony słabe hasło. Można wykorzystać progres bar*/
 
