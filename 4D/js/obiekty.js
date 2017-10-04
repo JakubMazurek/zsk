@@ -140,7 +140,3 @@ console.log(platnosci.pokoj1.length);
 
 /*zad.dom. obliczyć całkowitą wartość platności wszystkich pokoi. Stwórz metodę o nazwie calkowitePlatnosci.*/
 
-
-
-
-
