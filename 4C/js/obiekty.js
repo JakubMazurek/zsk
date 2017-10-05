@@ -293,8 +293,3 @@ kajtek2.waga = 11;
 console.log(kajtek1.waga); //10
 console.log(kajtek2.waga); //11
 console.log(pies.isPrototypeOf(kajtek1))
-
-
-
-
-
