@@ -176,7 +176,7 @@ for (var i=0; i < psy.length; i++){
     }else{
         rozmiar =  'mały pies';
     }
-    //document.write('Pies: ' + '<span style="color:blue">' + psy[i].imie +  '</span>' + ' to ' + rozmiar + '<br>');
+    document.write('Pies: ' + '<span style="color:blue">' + psy[i].imie +  '</span>' + ' to ' + rozmiar + '<br>');
 }
 
 console.log(edi.ulubioneZajecia);
