@@ -135,8 +135,86 @@ var platnosci = {
     pokoj4: [50,100,250],
 };
 
-console.log(platnosci.pokoj1[1]);
-console.log(platnosci.pokoj1.length);
+//console.log(platnosci.pokoj1[1]);
+//console.log(platnosci.pokoj1.length);
 
 /*zad.dom. obliczyć całkowitą wartość platności wszystkich pokoi. Stwórz metodę o nazwie calkowitePlatnosci.*/
+
+function Pies(imie, rasa, waga, ulubioneZajecia) {
+    this.imie = imie;
+    this.rasa = rasa;
+    this.waga = waga;
+    this.ulubioneZajecia = ulubioneZajecia;
+}
+
+var azor = new Pies('Azor', 'bokser', 30, ['spacery', 'szczekanie']);
+var edi = new Pies('Edi', 'bokser', 8, ['bieganie', 'szczekanie']);
+var saba = new Pies('Saba', 'bokser', 30, ['spacery']);
+
+var psy = [azor, edi, saba];
+//console.log(psy);
+//document.write(psy); //[object Object],[object Object],[object Object]
+
+edi.ulubioneZajecia.push('spanie');
+//document.write(edi.ulubioneZajecia);
+
+var rozmiar = 'mały pies';
+
+for (var i=0; i<psy.length; i++){
+    if (psy[i].waga > 10){
+        rozmiar = 'duży pies';
+    }else{
+        rozmiar = 'mały pies';
+    }
+    //document.write('Pies: <span style="color:blue">' + psy[i].imie + '</span> - ' + rozmiar + '<br>');
+}
+
+//*******************************************************
+
+var tab = ['Jan', 'Nowak', 'Poznań'];
+var i;
+/*for (i in tab){
+    document.write(i + ' - ' + tab[i] + '<br>');
+}*/
+
+
+/*for (i in edi){
+    document.write(i + ' - ' + edi[i] + '<br>');
+}*/
+
+/*for (i in edi){
+    if (i == 'imie' || i == 'rasa')
+    document.write(i + ' - ' + edi[i] + '<br>');
+}*/
+
+//****************************************************************
+//****************************************************************
+
+function Uczen(imie, nazwisko) {
+    this.imie = imie;
+    this.nazwisko = nazwisko;
+}
+
+var robert = new Uczen('Robert', 'Lewandowski');
+Uczen.prototype.narodowosc = 'polska';
+Uczen.prototype.wyswietlUcznia = function() {
+    return 'Imię: ' + this.imie + ', nazwisko: ' + this.nazwisko + ', narodowość: ' + this.narodowosc;
+}
+
+//document.write(robert.wyswietlUcznia());
+//document.write(Uczen.prototype);
+//document.write(robert.constructor);
+document.write(robert.constructor.prototype.narodowosc);
+
+
+
+
+
+
+
+
+
+
+
+
 
