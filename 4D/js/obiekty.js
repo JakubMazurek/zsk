@@ -205,7 +205,7 @@ Uczen.prototype.wyswietlUcznia = function() {
 //document.write(Uczen.prototype);
 //document.write(robert.constructor);
 document.write(robert.constructor.prototype.narodowosc);
-
+console.log(robert.hasOwnProperty('narodowosc'));
 
 
 
