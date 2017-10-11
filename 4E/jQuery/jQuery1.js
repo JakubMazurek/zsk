@@ -18,6 +18,16 @@ $(document).ready(function(){
        $('#akapit').show('fast');
    })
 
+   $('#zmienHtml').click(function(){
+       $('#html').html('<h1>Zmieniony tekst</h1>')
+   })
+
+   $('a').css('color','green');
+   $('#link a').css('color','black');
+
+   $('#kolorInny').click(function(){
+       $('input[type="text"]').css({'background': 'brown','color':'black'});
+   })
 
 
 
