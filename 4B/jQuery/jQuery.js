@@ -18,6 +18,12 @@
      $('#zmienKolor').click(function(){
    $('#kolor').css('color','lime');
 });
+
+     $('a').css('color','green');
+     $('#link a').css('color','red');
+
+
+
  });
 
 
