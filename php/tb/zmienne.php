@@ -57,7 +57,18 @@ $nazwisko = "Nowak";
 NAZWISKO;
     echo $tekstNazwisko;
 
+//typ złożony
+  //typ array
+  //typ object
 
+//typ specjalny
+    //typ resource
+    //typ null
+
+    $inna = null;
+    $inna1 = NULL;
+
+    echo 'Zmienna wynosi', $inna;
 
 
 ?>
