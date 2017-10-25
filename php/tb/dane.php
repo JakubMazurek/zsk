@@ -1,5 +1,5 @@
 <?php
- /*   $imie = $_GET['imie'];
+    $imie = $_GET['imie'];
     $nazwisko = $_GET['nazwisko'];
     //echo $imie, $nazwisko;
 
@@ -8,9 +8,9 @@
     }else{
         echo "Twoje imię: <span style=\"color:red\">$imie</span>";
         echo "<br>Twoje nazwisko: <span style=\"color:red\">$nazwisko</span>";
-    }*/
+    }
 
-    /* $login = $_POST['login'];
+     $login = $_POST['login'];
     $haslo = $_POST['pass'];
 
     //echo $login, $haslo;
@@ -20,7 +20,7 @@
         echo 'Hasło: ', $haslo, '<br>';
     }else{
         echo 'Nie wprowadziłeś wszystkich danych';
-    }*/
+    }
 
 
     if (isset($_GET['kolor'])){
