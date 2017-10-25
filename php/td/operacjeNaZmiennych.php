@@ -28,7 +28,7 @@
 //zadanie 1
 //Sprawdz czy w sklepie kupisz sok
 
-/*$sklep = 'otwarty';
+$sklep = 'otwarty';
 $pieniadze = 1;
 $sok = true;
 
@@ -36,7 +36,7 @@ if ($sklep == 'otwarty' && $pieniadze > 5 && $sok){
     echo "kupiłeś sok<br>";
 }else{
     echo "Nie kupiłeś soku<br>";
-}*/
+}
 
 //Zadanie 2
 //Chcesz kupić w sklepie sok lub banany

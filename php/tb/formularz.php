@@ -5,11 +5,11 @@
 <title>Formularz zajęcia 2</title>
 </head>
 <body>
-<!--<form method="get" action="dane.php">
+<form method="get" action="dane.php">
    <input type="text" name="imie">Imię<br>
    <input type="text" name="nazwisko">Nazwisko<br>
    <input type="submit">
-</form><br>-->
+</form><br>
 
     <!--<form method="post" action="dane.php">
         <input type="text" name="login">Login<br>
