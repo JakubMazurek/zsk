@@ -36,12 +36,16 @@
         <input type="radio" name="kolor" value="Zielony">Zielony<br>
         <input type="radio" name="kolor" value="Czerwony">Czerwony<br>
         <input type="radio" name="kolor" value="Niebieski">Niebieski<br>
-        <input type="submit">
+        <input type="submit" name="przycisk">
     </form>
     <?php
+
+          if (isset($_GET['przycisk'])){
           if (isset($_GET['kolor'])){
         echo "Zaznaczyłeś kolor: {$_GET['kolor']}";
-    }
+    }else{
+              echo "Nie zaznaczyłeś pola radio";
+          }}
     ?>
 
 </body>
