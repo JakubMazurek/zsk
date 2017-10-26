@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kalkulator</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <select id="wybor">
+    <option value="dodawanie">+</option>
+    <option value="odejmowanie">-</option>
+    <option value="mnozenie">*</option>
+    <option value="dzielenie">/</option>
+    </select>
+    <input type="text" id="b">
+    <button id="przycisk">=</button>
+    <input type="text" id="wynik" disabled><br>
+    <div id="komunikat"></div>
+    
+    <script>
+        var przycisk = document.getElementById('przycisk');
+        var a = document.getElementById('a');
+        var b = document.getElementById('b');
+        var wynik = document.getElementById('wynik');
+        var wybor = document.getElementById('wybor');
+        var komunikat = document.getElementById('komunikat');
+        var oblicz;
+        var sprawdzA;
+        var sprawdzB;
+        var reg = /^-*\d{1,10}([.|,]\d{1,10})?$/;
+        
+        function oblicz(){
+            var poleA = a.value;
+            var poleB = b.value;
+            sprawdzA = reg.test(poleA);
+            sprawdzB = reg.test(poleB);
+            console.log(sprawdzA);
+            console.log(sprawdzB);
+            
+           if (sprawdzA && sprawdzB){
+               poleA = poleA.replace(',','.');
+               poleB = poleB.replace(',','.');
+               
+               switch(wybor.value){
+                   case 'dodawanie':
+                       oblicz = Number(poleA) + Number(poleB);
+                       break;
+                   case 'odejmowanie':
+                       oblicz = Number(poleA) - Number(poleB);
+                       break;  
+                   case 'mnozenie':
+                       oblicz = Number(poleA) * Number(poleB);
+                       break;
+                   case 'dzielenie':
+                       oblicz = Number(poleA) / Number(poleB);
+                       break;                   
+            }
+               oblicz = oblicz.toFixed(2);
+               wynik.value = oblicz;
+               komunikat.textContent = '';
+            
+           }else{
+               wynik.value = '';
+               komunikat.style.color = '#ce0b0b';
+               komunikat.style.fontSize = '30px';
+               komunikat.textContent = 'Wprowadź poprawne dane';
+           }
+            
+        }
+        
+        przycisk.addEventListener('click',oblicz);
+        
+        
+    
+    </script>
+    
+</body>
+</html>
