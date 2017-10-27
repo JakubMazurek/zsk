@@ -150,10 +150,63 @@ TABLICA;
         echo "$x ";
     }
 
-//linia 155
+//sortowanie tablicy asocjacyjnej
 
+    $tabAsoc = array(
+        "imie" => "andrzej",
+        "pseudonim" => "2endru",
+        "wiek" => 30,
+        "nazwisko" => "kowal",
+    );
 
+    echo "<br><br>";
 
+    function wyswietl($tab){
+        foreach($tab as $x){
+            echo "$x ";
+        }
+            echo "<br>";
+    }
+    wyswietl($tabAsoc);
 
+//sortowanie według wartości
+
+    asort($tabAsoc);
+    wyswietl($tabAsoc);
+    //andrzej endru kowal 30
+    arsort($tabAsoc);
+    wyswietl($tabAsoc);
+
+    echo gettype($tabAsoc['pseudonim']); //string
+    echo gettype($tabAsoc['wiek']); //integer
+    echo "<br>";
+
+//sortowanie według klucza
+
+    ksort($tabAsoc);
+    wyswietl($tabAsoc);
+    //andrzej kowal 2endru 30
+    krsort($tabAsoc);
+    wyswietl($tabAsoc);
+
+//wyświetlanie danych z tablicy
+
+    var_dump($tabAsoc);
+
+    echo "<br>";
+    print_r($tabAsoc);
+    /*Array ( [wiek] => 30 [pseudonim] => 2endru [nazwisko] => kowal [imie] => andrzej )*/
+
+    echo "<pre>";
+        print_r($tabAsoc);
+    echo "</pre>";
+
+    /*Array
+(
+    [wiek] => 30
+    [pseudonim] => 2endru
+    [nazwisko] => kowal
+    [imie] => andrzej
+)*/
 
 ?>
