@@ -85,7 +85,7 @@ voluptate summis legam ullamco legam. Ea e eram fugiat sint in fabulas ex malis
     $x1 = "abcabc";
     $x2 = "abc";
 
-    if(/*strpos($x1,$x2) == true && */strpos($x1,$x2) >= 0){
+    if(/*strpos($x1,$x2) === true && */strpos($x1,$x2) >= 0){
         echo "Ciąg $x2 został znaleziony w ciągu $x1";
     }else{
         echo "Ciąg $x2 nie został znaleziony w ciągu $x1";
