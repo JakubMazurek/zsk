@@ -143,7 +143,7 @@ TEKST;
     echo $poprawnyLogin;
 
 /*zad.dom. 1
-    Napisz program, który pozwoli cenzurować zdanie popdane przez użytkownika w formularzu.*/
+    Napisz program, który pozwoli cenzurować zdanie podane przez użytkownika w formularzu.*/
 
 /*zad.dom. 2
     Napisz funkcję , która będzie obliczała wystąpienia określonego ciągu znaków w danym tekście. Tekst i szukany ciąg znaków powinny być przekazywane w postaci argumentów*/
