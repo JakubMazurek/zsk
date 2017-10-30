@@ -140,7 +140,7 @@ TEKST;
     );
 
     $poprawnyLogin = str_replace($cenzura, $zamiana, $login);
-    echo $poprawnyLogin;
+    echo $poprawnyLogin,"<br>";
 
 /*zad.dom. 1
     Napisz program, który pozwoli cenzurować zdanie podane przez użytkownika w formularzu.*/
@@ -148,7 +148,20 @@ TEKST;
 /*zad.dom. 2
     Napisz funkcję , która będzie obliczała wystąpienia określonego ciągu znaków w danym tekście. Tekst i szukany ciąg znaków powinny być przekazywane w postaci argumentów*/
 
+    $formularz = <<< FORM
+    <form method = "post">
+        <input type="text" name="dane"><br>
+        <input type="submit">
+    </form>
+FORM;
 
+    echo $formularz;
 
-
+    if (isset($_POST['dane'])){
+        $dane = $_POST['dane'];
+        $niedozwolone = array("polonez","multipla","bmw");
+        $zamiana = "#$******";
+        $poprawne = str_ireplace($niedozwolone, $zamiana, $dane);
+        echo "<h1>$poprawne</h1>";
+    }
 ?>
