@@ -140,7 +140,7 @@
         //godzina, minuta, sekunda, miesiąc, dzień, rok
     $czas2 = mktime(0, 0, 0, $m2, $d2, $r2);
     $czas = abs($czas2 - $czas1); //596419200 ilość sekund
-    $dni = $czas/(60*60*24); //86400
+    $dni = $czas/(60*60*24); //$czas/86400
     $lata = floor($dni/365); //18
     echo "Ilość sekund: $czas<br>Ilośćdni: $dni<br> Lata: $lata<br>";
 
