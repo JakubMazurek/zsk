@@ -37,7 +37,7 @@
     echo date("S"),"<br>"; //th
 
     echo date("t"),"<br>"; //31 liczba dni w miesiącu
-    echo date("T"),"<br>"; //31 strefa czasowa
+    echo date("T"),"<br>"; //CET strefa czasowa
     echo date("U"),"<br>"; //1509367795 Znacznik czasu Uniksa
 
     echo date("w"),"<br>"; //1 dzień tygodnia
