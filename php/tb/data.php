@@ -17,7 +17,7 @@
     echo date("F"),"<br>"; //October
 
     echo date("g"),"<br>"; //1 format 12-godzinny bez zera na początku
-    echo date("G"),"<br>"; //13 format 12-godzinny bez zera na początku
+    echo date("G"),"<br>"; //13 format 24-godzinny bez zera na początku
     echo date("h"),"<br>"; //01 format 12-godzinny z zerem na początku
     echo date("H"),"<br>"; //13 format 24-godzinny z zerem na początku
 
