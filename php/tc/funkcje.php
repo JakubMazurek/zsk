@@ -75,12 +75,4 @@
     Wstaw sumy do tablicy. Stwórz tablicę asocjacyjną, której kluczmai będą miesiące. Suma za pracę będzie automatycznie wstawioana do tablicy w zależności od miesiąca. Wstaw również do tablicy potwierdzenie dotyczące daty, godziny, minut i sekund w jakiej użytkownik dostał pieniądze.
     Użytkownik może wybrać okres w jakim chce sprawdzić ile zarobił jak również średni zarobek z trzech ostatnich miesięcy oraz całego roku.*/
 
-
-
-
-
-
-
-
-
 ?>
