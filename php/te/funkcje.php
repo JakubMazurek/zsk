@@ -28,7 +28,7 @@
 
     $x = 10;
     function wyswietl(){
-        echo "Wartośc zmiennej \$x wynosi: <br>";
+        echo "Wartość zmiennej \$x wynosi: <br>";
         echo $GLOBALS['x'],"<br>";
     }
 
@@ -69,8 +69,8 @@
     suma1(); //$liczba wynosi: 20
     suma1(); //$liczba wynosi: 30
 
-//****************************************
 
+//****************************************
 //argumenty
 
     function dodaj($x, $y = 1){
