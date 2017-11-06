@@ -86,14 +86,6 @@ WIERSZ;
             echo "Błędne zapytanie";
         }
 
-
-
-
-
-
-
-
-
     if(mysqli_close($polaczenie)){
         echo "Zamknięte połączenie";
     }else{
