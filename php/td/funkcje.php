@@ -64,6 +64,35 @@
 
     echo suma1(); //10
     echo suma1(); //30
-    echo suma1(); //50
+    echo suma1(),"<br>"; //50
+
+//*************************************************
+//argumenty
+
+    function dodaj($x, $y = 1){
+        return $x + $y;
+    }
+
+    $z = 10;
+
+    $liczba = dodaj($z, 6);
+    echo $liczba,"<br>"; //16
+
+    $liczba1 = dodaj(2, 7);
+    echo $liczba1,"<br>"; //9
+
+    $liczba2 = dodaj(3);
+    echo $liczba2,"<br>"; //4  => 3+1
+
+//****************************************************
+//argumenty i typy danych
+
+    function mnozenie(float $x, int $y){
+        return $x * $y;
+    }
+
+    echo mnozenie(3,4); //12
+    echo mnozenie(2.5,4); //10
+    echo mnozenie(4,2.5); //8
 
 ?>
