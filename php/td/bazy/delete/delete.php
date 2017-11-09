@@ -15,7 +15,5 @@
                 header('location: ./pacjent.php');
             }
 
-
-
         }
 ?>
