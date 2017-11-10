@@ -15,7 +15,7 @@
 
         if(!$polaczenie->connect_errno){
 
-            $sort = 'uczulenia';
+            $sort = 'id';
 
             if(isset($_GET['sort'])){
                 $sort = $_GET['sort'];
@@ -68,6 +68,21 @@ WIERSZ;
         }
 
     ?>
+
+    <br>
+    <form action="insert.php" method="post">
+        <input type="text" name="imie" placeholder="imię"><br><br>
+        <input type="text" name="nazwisko" placeholder="nazwisko"><br><br>
+        <input type="text" name="choroby_przewlekle" placeholder="chroby przewlekłe"><br><br>
+        <input type="text" name="uczulenia" placeholder="uczulenia"><br><br>
+        <input type="text" name="choroba" placeholder="choroba"><br><br>
+        <input type="text" name="leki_przepisane" placeholder="leki przepisane"><br><br>
+
+        <textarea rows="6" cols="35" name="opis">opis...</textarea><br><br>
+
+        <input type="submit" name="przycisk" value="Dodaj pacjenta"><br><br>
+    </form>
+
 
 
 </body>
